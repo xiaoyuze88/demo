@@ -1,7 +1,7 @@
 require.config({
     'baseUrl' : './js',
     paths: {
-        'Map' : 'Map'
+        'Map' : 'map'
     }
 });
 
