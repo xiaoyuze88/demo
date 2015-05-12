@@ -15,7 +15,14 @@
     <script>
     var parsedUrl = parse_url(location.href);
 
-    var page = parsedUrl.query.page;
+    if(parsedUrl.query && parsedUrl.query.page) {
+        var page = parsedUrl.query.page;
+    }
+    else {
+        page = 1;
+    }
+
+    
     // consle.log(page);
     $(".pagination-wrapper").pagination({
         // prev:'',
